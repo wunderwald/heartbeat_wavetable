@@ -26,3 +26,10 @@ def toInt(signal):
     for sample in signal:
         out.append(math.floor(sample))
     return out
+
+def concat(signals):
+    out=[]
+    for signal in signals:
+        for sample in signal:
+            out.append(sample)
+    return out
